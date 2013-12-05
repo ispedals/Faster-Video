@@ -1,12 +1,12 @@
-# Faster Video Redux
+# Faster Video
 
-Addon for Firefox for Desktop that allows one to change the playback rate of HTML5 videos.
-This is a counterpart to Faster Video that is available for Firefox for Android.
+Addon for Firefox for Desktop that allows one to manipulate the playback rate of HTML5 videos.
+While right-clicking on the video allows one to change the playback rate to either 1.5X or 2.0X, this
+addon gives more control.
+This is a counterpart to Faster Video Mobile that is available for Firefox for Android.
 
 Requires Firefox for Desktop 20.0+
 
-Chose the video speed from context menu. The menu will only be present if a single video is playing.
-
-##Todo
-* Determine how to access DOM unrestrictedly so that videos in iframes can be manipulated
-* Merge with Faster Video
+If a HTML5 video is playing, change the playback rate from the context menu by selecting video speed. You can access the context menu
+by right-clicking anywhere on the screen except the video itself.
+The menu will only be present if a single video is playing.

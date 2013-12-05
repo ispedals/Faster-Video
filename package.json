@@ -1,10 +1,10 @@
 {
-  "name": "faster-video-redux",
-  "fullName": "Faster Video Redux",
+  "name": "faster-video",
+  "fullName": "Faster Video",
   "id": "jid1-YA4JOaQVLNA1KQ",
   "description": "Allows manipulation of the playback rate of HTML5 videos",
-  "author": "is pedals",
-  "license": "Public Domain",
+  "author": "ispedals",
+  "license": "MIT",
   "version": "1.0",
   "permissions": {"private-browsing": true}
 }
