@@ -16,4 +16,4 @@ Faster Video Mobile is licensed under the MIT License, Copyright (c) 2013 ispeda
 The icon is from Ionicons (http://ionicons.com/), which is under the MIT License.
 
 ##See also
-* Faster Video Mobile
+* [Faster Video Mobile](https://github.com/ispedals/Faster-Video-Mobile)
