@@ -1,5 +1,7 @@
 # Faster Video
 
+[AMO Link](https://addons.mozilla.org/en-US/firefox/addon/faster-video/)
+
 Addon for Firefox for Desktop that allows one to manipulate the playback rate of HTML5 videos.
 While right-clicking on the video allows one to change the playback rate to either 1.5X or 2.0X, this
 addon gives more control.
@@ -13,7 +15,8 @@ The menu will only be present if a single video is playing.
 
 ##License
 Faster Video Mobile is licensed under the MIT License, Copyright (c) 2013 ispedals
+
 The icon is from Ionicons (http://ionicons.com/), which is under the MIT License.
 
 ##See also
-* [Faster Video Mobile](https://github.com/ispedals/Faster-Video-Mobile)
+* [Faster Video Mobile](https://addons.mozilla.org/en-US/android/addon/faster-video-mobile) ([Github Link](https://github.com/ispedals/Faster-Video-Mobile))
