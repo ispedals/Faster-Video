@@ -30,8 +30,10 @@ self.on("click", function (node, data) {
     let rate = data.slice(0, -1);
     rate = parseFloat(rate)
     videos[0].playbackRate = rate;
+    videos[0].defaultPlaybackRate = rate;
     return;
   }
   data = parseFloat(data);
   videos[0].playbackRate += data;
+  videos[0].defaultPlaybackRate += data;
 });
