@@ -1,11 +1,11 @@
 {
   "name": "faster-video",
-  "fullName": "Faster Video",
-  "id": "jid1-YA4JOaQVLNA1KQ",
+  "title": "Faster Video",
+  "id": "jid1-YA4JOaQVLNA1KQ@jetpack",
   "description": "Allows manipulation of the playback rate of HTML5 videos",
   "author": "ispedals",
   "homepage": "https://github.com/ispedals/Faster-Video",
   "license": "MIT",
-  "version": "1.0",
+  "version": "1.1.0",
   "permissions": {"private-browsing": true}
 }
