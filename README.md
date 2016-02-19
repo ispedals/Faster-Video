@@ -7,11 +7,14 @@ While right-clicking on the video allows one to change the playback rate to eith
 addon gives more control.
 This is a counterpart to Faster Video Mobile that is available for Firefox for Android.
 
-Requires Firefox for Desktop 20.0+
+Requires Firefox for Desktop 38.0+
 
 If a HTML5 video is playing, change the playback rate from the context menu by selecting video speed. You can access the context menu
 by right-clicking anywhere on the screen except the video itself.
 The menu will only be present if a single video is playing.
+
+##Customizing Speeds
+The default video speeds and video speed modifiers can be changed through changing the preferences. The numbers should be comma-separated.
 
 ##License
 Faster Video Mobile is licensed under the MIT License, Copyright (c) 2013 ispedals
