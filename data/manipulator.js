@@ -1,5 +1,5 @@
 self.on("context", function (node) {
-  let videos = Array.prototype.slice.call(document.getElementsByTagName("video"));
+  let elems = Array.prototype.slice.call(document.querySelectorAll("video, audio"));
   /*
     TODO
     Content scripts can't access content hosted in an iframe, if that content is served from a different domain,
@@ -8,11 +8,11 @@ self.on("context", function (node) {
 
     we could try whitelisting domains under the "cross-domain-content" key for various video sites
   */
-  videos = videos.filter(function (video) {
-    return !video.paused;
+  elems = elems.filter(function (elem) {
+    return !elem.paused;
   });
-  if (videos.length === 1) {
-    self.postMessage(videos[0].playbackRate + "X");
+  if (elems.length === 1) {
+    self.postMessage(elems[0].playbackRate + "X");
     return true;
   } else {
     self.postMessage('reset');
@@ -21,19 +21,19 @@ self.on("context", function (node) {
 });
 
 self.on("click", function (node, data) {
-  let videos = Array.prototype.slice.call(document.getElementsByTagName("video"));
-  videos = videos.filter(function (video) {
-    return !video.paused;
+  let elems = Array.prototype.slice.call(document.querySelectorAll("video, audio"));
+  elems = elems.filter(function (elem) {
+    return !elem.paused;
   });
   if (data.endsWith('X')) {
     //fixed value, strip X
     let rate = data.slice(0, -1);
     rate = parseFloat(rate)
-    videos[0].playbackRate = rate;
-    videos[0].defaultPlaybackRate = rate;
+    elems[0].playbackRate = rate;
+    elems[0].defaultPlaybackRate = rate;
     return;
   }
   data = parseFloat(data);
-  videos[0].playbackRate += data;
-  videos[0].defaultPlaybackRate += data;
+  elems[0].playbackRate += data;
+  elems[0].defaultPlaybackRate += data;
 });
