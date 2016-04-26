@@ -2,23 +2,23 @@
   "name": "faster-video",
   "title": "Faster Video",
   "id": "jid1-YA4JOaQVLNA1KQ@jetpack",
-  "description": "Allows manipulation of the playback rate of HTML5 videos",
+  "description": "Allows manipulation of the playback rate of HTML5 media",
   "author": "ispedals",
   "homepage": "https://github.com/ispedals/Faster-Video",
   "license": "MIT",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "permissions": {"private-browsing": true},
   "preferences": [{
         "name": "speeds",
-        "title": "Video Speeds",
-        "description": "Sets which video speeds to choose from (comma-separated)",
+        "title": "Playback Speeds",
+        "description": "Sets which playback speeds to choose from (comma-separated)",
         "type": "string",
         "value": "0.5, 1, 3, 5"
     },
     {
         "name": "modifiers",
-        "title": "Video Speed Modifiers",
-        "description": "Sets by which units one can change the video speed (comma-separated)",
+        "title": "Playback Speed Modifiers",
+        "description": "Sets by which units one can change the playback speed (comma-separated)",
         "type": "string",
         "value": "0.25, 1"
   }]

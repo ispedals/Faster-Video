@@ -31,7 +31,7 @@ function createMenu(){
     let items = [].concat(speeds, cm.Separator(), positiveModifiers, negativeModifiers);
 
     menu = cm.Menu({
-        label: "Video Speed",
+        label: "Playback Speed",
         contentScriptFile: "./manipulator.js",
         items: items,
         onMessage: function (args) {
