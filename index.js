@@ -1,6 +1,9 @@
 const cm = require("sdk/context-menu");
 const preferences = require("sdk/simple-prefs");
 const prefs = preferences.prefs;
+const self = require("sdk/self");
+const windows = require('sdk/window/utils').windows;
+const loadSheet = require('sdk/stylesheet/utils').loadSheet;
 
 const parseNumbers = require('./numberParser.js').parseNumbers;
 
@@ -31,7 +34,7 @@ function createMenu(){
     let items = [].concat(speeds, cm.Separator(), positiveModifiers, negativeModifiers);
 
     menu = cm.Menu({
-        label: "Playback Speed",
+        label: "Playback Rate",
         contentScriptFile: "./manipulator.js",
         items: items,
         onMessage: function (args) {
@@ -45,5 +48,6 @@ function createMenu(){
     });
 }
 
+windows('navigator:browser', {includePrivate:true}).forEach(window => loadSheet(window, self.data.url('faster-video-style.css')));
 createMenu();
 preferences.on("", createMenu);

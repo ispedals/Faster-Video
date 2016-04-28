@@ -1,0 +1,6 @@
+.addon-context-menu-item[label^="Playback Rate"] {
+	-moz-box-ordinal-group: 0;
+}
+#context-media-playbackrate {
+	display:none;
+}
