@@ -3,6 +3,7 @@ function getElement(node){
 		return [node];
 	}
 	let elems = Array.prototype.slice.call(document.querySelectorAll("video, audio"));
+	elems = elems.filter(elem => elem.readyState > 0);
 	if(elems.length <= 1){
 		return elems;
 	}
